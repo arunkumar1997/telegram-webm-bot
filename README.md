@@ -15,7 +15,7 @@ cd telegram-webm-bot
 npm install
 ```
 
-### Use https://t.me/BotFather to create a bot and get the token
+Use https://t.me/BotFather to create a bot and get the token
 
 
 ## Start the bot
