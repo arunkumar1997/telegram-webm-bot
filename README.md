@@ -1,10 +1,10 @@
 # telegram-webm-bot
 
-## Telegram bot to convert GIF and video files to webm
+Telegram bot to convert GIF and video files to webm.
 
 ## Dependencies
 
-You need to have `ffmpeg` installed in order to use this bot
+You need to have `ffmpeg` installed in order to use this bot.
 
 
 ## Installtion
@@ -15,7 +15,7 @@ cd telegram-webm-bot
 npm install
 ```
 
-Use https://t.me/BotFather to create a bot and get the token
+Use https://t.me/BotFather to create a bot and get the token.
 
 
 ## Start the bot
