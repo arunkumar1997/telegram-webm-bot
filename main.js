@@ -13,7 +13,7 @@ const app = express()
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send('Check me at t.me/dnof3f81f3dBot.')
+    res.json({ botURL: 't.me/dnof3f81f3dBot' })
 })
 
 app.listen(port, '0.0.0.0', () => {
