@@ -1,4 +1,5 @@
-const { Telegraf, Extra } = require('telegraf')
+const { Telegraf } = require('telegraf')
+const express = require('express')
 require('dotenv').config()
 const fs = require('fs');
 const Path = require('path')
@@ -7,6 +8,17 @@ const util = require('node:util');
 const execFile = util.promisify(require('node:child_process').execFile);
 const MAX_FILE_SIZE = 6 * 100 * 1024 // 600Kb
 const bot = new Telegraf(process.env.BOT_TOKEN)
+
+const app = express()
+const port = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+    res.send('Check me at t.me/dnof3f81f3dBot.')
+})
+
+app.listen(port, '0.0.0.0', () => {
+    console.log('Server is running s on port: ' + port)
+});
 
 bot.start((ctx) => {
     let message = `Please upload GIF or video files to get the webm file\nMax file size 600kb`
