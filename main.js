@@ -16,10 +16,6 @@ app.get('/', (req, res) => {
     res.json({ botURL: 't.me/dnof3f81f3dBot' })
 })
 
-app.listen(port, '0.0.0.0', () => {
-    console.log('Server is running s on port: ' + port)
-});
-
 bot.start((ctx) => {
     let message = `Please upload GIF or video files to get the webm file\nMax file size 600kb`
     ctx.reply(message, { reply_to_message_id: ctx.message.message_id })
@@ -100,3 +96,8 @@ function deleteFiles(fileId, fileExtention) {
         console.log("error", error)
     }
 }
+
+
+app.listen(port, '0.0.0.0', () => {
+    console.log('Server is running s on port: ' + port)
+});
